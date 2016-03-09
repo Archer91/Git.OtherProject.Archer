@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="首页" description="" url="~/default.aspx" target="_top" roles="*">
+    <siteMapNode title="收料处理" description="" url="~/inbound/default.aspx" roles="*">
+      <siteMapNode title="入库登记" description="" url="~/inbound/inbound.aspx" roles="材料员,管库员"/>
+      <siteMapNode title="入库查询" description="" url="~/inbound/inboundQuery.aspx" roles="材料员,管库员"/>
+      <siteMapNode title="采购计划" description="" url="~/inbound/stockPlan.aspx" roles="材料员,管库员"/>
+    </siteMapNode>
+    <siteMapNode title="发料处理" description="" url="~/outbound/default.aspx" roles="*">
+      <siteMapNode title="支出发料" description="" url="~/outbound/dispatch.aspx" roles="管库员"/>
+      <siteMapNode title="发料查询" description="" url="~/outbound/dispatchQuery.aspx" roles="管库员"/>
+      <siteMapNode title="退料登记" description="" url="~/outbound/return.aspx" roles="管库员"/>
+    </siteMapNode>
+    <siteMapNode title="库存管理" description="" url="~/inventory/default.aspx" roles="*">
+      <siteMapNode title="库存查询" description="" url="~/inventory/inventoryQuery.aspx" roles="材料员,管库员,材料室主任,定额员,高层领导"/>
+      <siteMapNode title="库存盘点" description="" url="~/inventory/check.aspx" roles="材料员,定额员"/>
+      <siteMapNode title="库间调拨" description="" url="" roles="材料员,定额员">
+        <siteMapNode title="库间调出" description="" url="~/inventory/transfer.aspx" roles="材料员,定额员"/>
+        <siteMapNode title="库间调入" description="" url="~/inventory/transferConfirm.aspx" roles="材料员,定额员"/>
+        <siteMapNode title="调拨查询" description="" url="~/inventory/transferQuery.aspx" roles="材料员,定额员"/>
+      </siteMapNode>       
+    </siteMapNode>
+    <siteMapNode title="基础设置" description="" url="~/setting/default.aspx" roles="*">
+      <siteMapNode title="部门字典" description="" url="~/setting/department.aspx" roles="系统管理员"/>
+      <siteMapNode title="用户设置" description="" url="~/setting/user.aspx" roles="系统管理员"/>
+      <siteMapNode title="个人信息" description="" url="~/setting/userInfo.aspx" roles="*"/>
+      <siteMapNode title="仓库字典" description="" url="~/setting/position.aspx" roles="系统管理员"/>
+      <siteMapNode title="物资字典" description="" url="~/setting/spares.aspx" roles="系统管理员"/>
+      <siteMapNode title="物资卡片" description="" url="~/setting/inventory.aspx" roles="系统管理员"/>
+      <siteMapNode title="供应商" description="" url="~/setting/supplier.aspx" roles="系统管理员"/>
+      <siteMapNode title="生产项目" description="" url="~/setting/project.aspx" roles="系统管理员"/>
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

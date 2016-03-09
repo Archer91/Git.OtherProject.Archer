@@ -1,0 +1,42 @@
+﻿
+div.divGridView100
+{
+width: expression(screen.availWidth); 
+height: expression((screen.availHeight-180)/2);
+overflow: auto;
+}
+
+div.divGridView1002
+{
+width: expression(screen.availWidth); 
+height: expression((screen.availHeight-180)/2+20);
+overflow: auto;
+}
+
+div.divGridView80
+{
+width: expression(0.8*screen.availWidth); 
+height: expression((screen.availHeight-20)/2);
+overflow: auto;
+}
+th, th.locked	{
+	position:relative;
+	cursor: default; 
+}
+	
+/* To provide freeze headers */	
+th {
+	top: expression(parentNode.parentNode.parentNode.parentNode.parentNode.scrollTop-2); /* IE5+ only */
+	z-index: 20;
+}
+
+
+/* To provide fixed columns */
+td.locked,  th.locked{
+	left: expression(parentNode.parentNode.parentNode.parentNode.parentNode.scrollLeft); /* IE5+ only */
+	position: relative;
+	z-index: 10;
+	background-color: #ffeaff;
+}
+/* To provide fixed columns in freeze headers will be display first */
+th.locked {z-index: 30;}

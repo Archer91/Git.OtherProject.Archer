@@ -1,0 +1,8 @@
+obj\Debug\ResolveAssemblyReference.cache
+bin\Debug\WMSInstall.dll
+bin\Debug\WMSInstall.pdb
+bin\Debug\Interop.SQLDMO.dll
+obj\Debug\Interop.SQLDMO.dll
+obj\Debug\WMSInstall.csproj.ResolveComReference.cache
+obj\Debug\WMSInstall.dll
+obj\Debug\WMSInstall.pdb
